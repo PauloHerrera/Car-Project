@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarProject</title>
+  <%= stylesheet_link_tag    "adminpanel", :media => "all" %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		<div id="wrapper">	
+			<div id="topbar" class="clearfix">
+	
+			<a href="index-2.html" class="logo"><span>Adminica Pro II</span></a>
+	
+			<div class="user_box round_all">
+				<img src="../../../images/profile.jpg" width="55" alt="Profile Pic" />
+				<h2>Administrator</h2>
+				<h3><a class="text_shadow" href="#">John Smith</a></h3>
+				<ul>
+					<li><a href="#">profile</a><span class="divider">|</span></li>
+					<li><a href="#">settings</a><span class="divider">|</span></li>
+					<li><a href="login.html">logout</a></li>
+				</ul>
+			</div><!-- #user_box -->	
+		</div><!-- #topbar -->		
+		<div id="sidebar">
+
+			<a href="index-2.html" class="logo"><span>Adminica Pro II</span></a>
+
+			<div class="user_box round_all clearfix">
+				<img src="../../../images/profile.jpg" width="55" alt="Profile Pic" />
+				<div class="user_links">
+					<h2>Administrator</h2>
+					<h3><a class="text_shadow" href="#">John Smith</a></h3>
+					<ul>
+						<li><a href="#">settings</a><span class="divider">|</span></li>
+						<li><a href="login.html">logout</a></li>
+					</ul>
+				</div>
+			</div><!-- #user_box -->
+
+			<ul id="accordion">
+				<li><a href="index-2.html" class="top_level"><img src="../../../images/icons/small/grey/Home.png"/>Home</a>
+					<ul class="drawer">
+						<li><a href="#">Activity</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Tasks</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="top_level"><img src="../../../images/icons/small/grey/Mail.png"/>Mailbox</a>
+					<ul class="drawer">
+						<li><a href="#">Inbox</a></li>
+						<li><a href="#">Sent Items</a></li>
+						<li><a href="#">Drafts</a></li>
+						<li><a href="#">Trash</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="top_level"><img src="../../../images/icons/small/grey/Documents.png"/>Documents</a>
+					<ul class="drawer">
+						<li><a href="#">Create New</a></li>
+						<li><a href="#">View All</a></li>
+						<li><a href="#">Upload/Download</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="top_level"><img src="../../../images/icons/small/grey/Users.png"/>Members</a>
+					<ul class="drawer">
+						<li><a href="#">Add New</a></li>
+						<li><a href="#">Edit/Delete</a></li>
+						<li><a href="#">Search Profiles</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="top_level"><img src="../../../images/icons/small/grey/Graph.png"/>Statistics</a></li>
+				<li><a href="#" class="top_level"><img src="../../../images/icons/small/grey/Cog%202.png"/>Settings</a>
+					<ul class="drawer">
+						<li><a href="#">Account</a></li>
+						<li><a href="#">System</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<form id="search_side"><input class="round_all" type="text" value="Search..." onclick="value=''"></form>
+			<ul id="side_links" class="text_shadow" >
+				<li><a href="#">Documentation and FAQs</a></li>
+				<li><a href="#">Expert Forum</a></li>
+				<li><a href="#">Product Wiki</a></li>
+				<li><a href="#">Latest Company News</a></li>
+			</ul>
+		</div><!-- #sidebar -->
+
+		<div id="main_container" class="main_container container_16 clearfix">
+			<div id="nav_top" class="clearfix  round_top">
+	<ul class="clearfix">
+		<li class="current"><a href="../dashboard/index.html"><img src="../../../images/icons/small/white/Laptop.png"/>Dashboard</a></li>
+	
+		<li><a href="#"><img src="../../../images/icons/small/grey/Frames.png"/>Layout</a>
+			<ul class="dropdown">
+				<li><a href="../layout/index.html">Grid System</a></li>
+				<li><a href="../text/index.html">Text & Typography</a></li>
+				<li><a class="has_slide" href="#">Layout Width</a>
+					<ul class="slideout">						
+						<li><a href="http://www.tricycle.ie/">Fixed</a></li>
+						<li><a href="http://www.tricycle.ie/">Fluid</a></li>
+					</ul>
+				</li>
+				<li><a class="has_slide" href="#">Layout Position</a>
+					<ul class="slideout">
+						<li><a href="http://www.tricycle.ie/">Side</a></li>
+						<li><a href="http://www.tricycle.ie/">Top</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#"><img src="../../../images/icons/small/grey/Coverflow.png"/>Boxes</a>
+			<ul class="dropdown">
+				<li><a class="has_slide" href="#">Tab Boxes</a>
+					<ul class="slideout">
+						<li><a href="../tabs/index.html">Horizontal Tabs</a></li>
+						<li><a href="../tabs/index.html">Vertical Tabs</a></li>
+					</ul>
+				</li>
+				<li><a href="../accordions/index.html">Accordions Boxes</a></li>
+				<li><a href="index.html">Code View</a></li>
+			</ul>
+		</li>	
+		<li><a href="#"><img src="../../../images/icons/small/grey/Create%20Write.png"/>Forms</a>
+			<ul class="dropdown dropdown_right">
+				<li><a href="../forms/index.html">Input Fields & Validation</a>
+				</li>
+				<li><a class="has_slide" href="#">Date</a>
+					<ul class="slideout">
+						<li><a href="../forms/index.html">Date Field</a></li>
+						<li><a href="../forms/index.html">Inline Picker</a></li>
+					</ul>
+				</li>
+				<li><a class="has_slide" href="#">Sliders</a>
+					<ul class="slideout">
+						<li><a href="../forms/index.html">Horizontal Slider</a></li>
+						<li><a href="../forms/index.html">Vertical Slider</a></li>
+						<li><a href="../forms/index.html">Range Slider</a></li>
+						<li><a href="../forms/index.html">Progress Bar</a></li>
+					</ul>
+				</li>
+				<li><a href="../buttons/index.html">Buttons</a></li>
+				<li><a href="../editor/index.html">WYSIWYG Editor</a></li>
+			</ul>
+		</li>		
+		<li><a href="#"><img src="../../../images/icons/small/grey/Images.png"/>Gallery</a>
+			<ul class="dropdown dropdown_right">
+				<li><a href="../gallery/index.html">Fancybox Gallery</a></li>
+				<li><a href="../gallery_sortable/index.html">Sortable Gallery</a></li>
+			</ul>
+		</li>			
+		<li><a href="../tables/index.html"><img src="../../../images/icons/small/grey/Blocks%20Images.png"/>Tables</a></li>
+		<li><a href="../files/index.html"><img src="../../../images/icons/small/grey/Folder.png"/>Files</a></li>
+		<li><a href="../contacts/index.html"><img src="../../../images/icons/small/grey/Users.png"/>Contacts</a></li>
+		<li><a href="../login/index.html"><img src="../../../images/icons/small/grey/Locked%202.png"/>Login</a></li>
+	</ul>	
+</div><!-- #nav_top -->
+
+
+</div>
+
+<%= yield %>
+
+</body>
+</html>
