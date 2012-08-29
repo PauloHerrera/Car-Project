@@ -11,4 +11,11 @@
  *= require_self
 */
 
-@import "normal/design/control_panel.css.scss";
+@import "admin/reset.css";
+@import "admin/all.css";
+@import "admin/jqueryui.css";
+
+@import "admin/reset.css";
+@import "admin/text.css";
+@import "admin/buttons.css";
+@import "admin/main.css";
