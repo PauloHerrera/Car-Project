@@ -1,0 +1,33 @@
+<%= form_for(@montadora) do |f| %>
+  <% if @montadora.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@montadora.errors.count, "error") %> prohibited this montadora from being saved:</h2>
+
+      <ul>
+      <% @montadora.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :site_url %><br />
+    <%= f.text_field :site_url %>
+  </div>
+  <div class="field">
+    <%= f.label :imagem %><br />
+    <%= f.text_field :imagem %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

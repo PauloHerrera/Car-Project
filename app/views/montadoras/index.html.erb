@@ -1,0 +1,29 @@
+<h1>Cadastro da Montadora</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th>Site Da Montadora</th>
+    <th>Imagem</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @montadoras.each do |montadora| %>
+  <tr>
+    <td><%= montadora.nome %></td>
+    <td><%= montadora.descricao %></td>
+    <td><%= montadora.site_url %></td>
+    <td><%= montadora.imagem %></td>
+    <td><%= link_to 'Show', montadora %></td>
+    <td><%= link_to 'Edit', edit_montadora_path(montadora) %></td>
+    <td><%= link_to 'Remover', montadora, confirm: 'Deseja realmente Remover Amontadora?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Montadora', new_montadora_path %>

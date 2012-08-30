@@ -1,0 +1,13 @@
+<h1>Nova Montadora</h1>
+
+<%= form_for @montadora,:url=>{:action =>'create'} do |f| %>
+
+<p>
+	<strong>Nome</strong>
+	<%= f.text_field :nome, :class => 'oioioi' %>	
+</p>
+	
+<%= f.submit "Inserir" %>
+
+<% end %>
+<%= link_to 'Back', montadoras_path %>

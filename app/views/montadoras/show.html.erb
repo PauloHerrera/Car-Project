@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @montadora.nome %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @montadora.descricao %>
+</p>
+
+<p>
+  <b>Site url:</b>
+  <%= @montadora.site_url %>
+</p>
+
+<p>
+  <b>Imagem:</b>
+  <%= @montadora.imagem %>
+</p>
+
+
+<%= link_to 'Edit', edit_montadora_path(@montadora) %> |
+<%= link_to 'Back', montadoras_path %>

@@ -1,5 +1,8 @@
 CarProject::Application.routes.draw do
-  get "admin/testee"
+
+  resources :montadoras
+
+  match 'admin' => 'admin#home'
 
   get "admin/home"
 
